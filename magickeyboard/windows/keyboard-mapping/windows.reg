@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Default Windows layout: remove all scancode remaps.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=-

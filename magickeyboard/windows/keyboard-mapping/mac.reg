@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Magic Keyboard layout (same value SharpKeys writes):
+;   Caps Lock -> Left Ctrl
+;   Left Win  <-> Left Alt   (Command -> Alt, Option -> Win)
+;   Right Win <-> Right Alt
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,06,00,00,00,1d,00,3a,00,38,00,5b,e0,5b,e0,38,00,38,e0,5c,e0,5c,e0,38,e0,00,00,00,00

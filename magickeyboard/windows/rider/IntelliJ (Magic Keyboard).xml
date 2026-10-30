@@ -1,12 +1,11 @@
-<keymap version="1" name="Visual Studio (Magic Keyboard)" parent="Visual Studio">
+<keymap version="1" name="IntelliJ (Magic Keyboard)" parent="$default">
   <action id="EditorCreateRectangularSelectionOnMouseDrag">
-    <mouse-shortcut keystroke="shift alt button1" />
+    <mouse-shortcut keystroke="button2" />
   </action>
   <action id="GotoDeclaration">
-    <keyboard-shortcut first-keystroke="f12" />
+    <keyboard-shortcut first-keystroke="ctrl b" />
     <mouse-shortcut keystroke="control button1" />
     <mouse-shortcut keystroke="alt button1" />
-    <mouse-shortcut keystroke="button2" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl g" />

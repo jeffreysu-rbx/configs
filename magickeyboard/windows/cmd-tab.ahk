@@ -7,8 +7,8 @@
 !a::Send "^a"   ; Cmd+A → Ctrl+A (select all)
 
 ; Option is remapped to Win, which Rider can't bind, so translate Option+Cmd+arrows
-; to Rider's Visual Studio keymap Back/Forward.
+; to Rider's IntelliJ keymap Back/Forward.
 #HotIf WinActive("ahk_exe rider64.exe")
-#!Left::Send "^{-}"     ; Option+Cmd+← → Navigate Back
-#!Right::Send "^+{-}"   ; Option+Cmd+→ → Navigate Forward
+#!Left::Send "^!{Left}"     ; Option+Cmd+← → Navigate Back
+#!Right::Send "^!{Right}"   ; Option+Cmd+→ → Navigate Forward
 #HotIf

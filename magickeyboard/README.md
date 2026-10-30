@@ -10,7 +10,7 @@ Makes an Apple Magic Keyboard behave like it does on a Mac.
 | `windows/keyboard-mapping/windows.reg` | Removes the remap (stock Windows layout). |
 | `windows/keyboard-mapping/SKILL.md` | Claude Code skill that switches between the two `.reg` files (`/keyboard-mapping mac`, `windows`, or `status`). |
 | `windows/cmd-tab.ahk` | AutoHotkey v2 script for Mac shortcuts the remap alone can't give you. Currently: Cmd+A → select all, and in Rider, Option+Cmd+←/→ → navigate back/forward. |
-| `windows/rider/Visual Studio (Magic Keyboard).xml` | Rider keymap based on Visual Studio that adds Cmd+L → go to line and Cmd+click → go to declaration. |
+| `windows/rider/IntelliJ (Magic Keyboard).xml` | Rider keymap based on the IntelliJ defaults that adds Cmd+L → go to line and Cmd+click → go to declaration. |
 
 Command → Alt means Cmd+Tab already switches windows natively. Because the remap
 happens before AutoHotkey sees the key, Cmd+<key> arrives in the script as
@@ -47,14 +47,14 @@ Alt+<key>, so hotkeys are written as `!<key>`.
    Double-click `cmd-tab.ahk` to start it now without signing out.
 
 5. **(Optional) Install the Rider keymap**, then restart Rider and select
-   "Visual Studio (Magic Keyboard)" in Settings → Keymap:
+   "IntelliJ (Magic Keyboard)" in Settings → Keymap:
 
    ```bash
    mkdir -p "$APPDATA/JetBrains/Rider2026.1/keymaps" && cp windows/rider/*.xml "$APPDATA/JetBrains/Rider2026.1/keymaps/"
    ```
 
    Change `Rider2026.1` to match your Rider version. The keymap gives Alt+click
-   to go to declaration, so column selection moves to Cmd+Shift+drag and the
+   to go to declaration, so column selection moves to middle-click drag and the
    debugger's Alt+click quick evaluate is removed (Ctrl+Alt+F8 still works).
    Option+Cmd+←/→ can't live in the keymap because Option is the Win key, which
    Rider can't bind; `cmd-tab.ahk` handles it instead.

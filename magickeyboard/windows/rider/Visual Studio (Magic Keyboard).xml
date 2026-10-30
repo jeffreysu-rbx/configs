@@ -1,0 +1,18 @@
+<keymap version="1" name="Visual Studio (Magic Keyboard)" parent="Visual Studio">
+  <action id="EditorCreateRectangularSelectionOnMouseDrag">
+    <mouse-shortcut keystroke="shift alt button1" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="f12" />
+    <mouse-shortcut keystroke="control button1" />
+    <mouse-shortcut keystroke="alt button1" />
+    <mouse-shortcut keystroke="button2" />
+  </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="ctrl g" />
+    <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="QuickEvaluateExpression">
+    <keyboard-shortcut first-keystroke="ctrl alt f8" />
+  </action>
+</keymap>
